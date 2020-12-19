@@ -1,13 +1,192 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Israel Santos</title>
-</head>
+<html>
+<title>FullStack Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('img/img-1.jpg');
+        min-height: 100%;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+</style>
+
 <body>
 
-    <h1>Em Construção</h1>
-    
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+            style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Portfolio</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+            onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo"><b>Felipe Israel</b></h1>
+            <p>FullStack Developer</p>
+            <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+                style="display:block;width:60%;margin:auto;">
+            <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+                height="1333">
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-download"></i> <a target="_blank" href="file/CV_Felipe-2020.pdf" download>Download Resume</a>
+            </button>
+        </header>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+            <h2 class="w3-text-grey">Alguns Cases</h2>
+            <hr class="w3-opacity">
+
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:1 -16px">
+                <div class="w3-row">
+                    <div class="w3-col s6 "><img src="cases/astro.png" style="width:100%"></div>
+                    <div class="w3-col s6 " style="padding: 20px;" />
+                    <p>Utilizando Framework Symfony php 7.3</p>
+                    <p>Banco de Dados Mysql </p>
+                    <p>Html, Bootstrap, Javascript, JQuery</p>
+                    <p>templa Engine Twig</p>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div class="w3-col s6 " style="padding: 20px;" />
+                <p>Utilizando AdonisJs</p>
+                <p>Banco de Dados MariaDB </p>
+                <p>React, Typescript, Javascript, Bootstrap</p>
+            </div>
+            <div class="w3-col s6 "><img src="cases/iagendei.png" style="width:100%"></div>
+
+        </div>
+
+        <!-- End photo grid -->
+    </div>
+    <!-- End Portfolio Section -->
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2>Sobre</h2>
+        <hr class="w3-opacity">
+            <p>Graduado em Análise e Desenvolvimento de Sistemas no Instituto Federal de Ciência e Tecnologia de São Paulo.Trabalho como Analista de Sistemas numa empresa de Contabilidade - Contabexpress na cidade de Taubaté interior de São Paulo. A ContabExpress atua no ramo Contábil mantendo um trabalho consultivo e um maior estreitamento com seus clientes. Tendo um departamento de Tecnologia onde foi desenvolvido o "Astro" ferramento disponibilizada para seus clientes onde eu como analista e desenvolvedor faço parte. Obtendo conhecimentos como desenvolvimento de APIs,Back-end (plataforma Simfony - framework baseado em PHP ) e Front-End (Twig), modelagem de dados etc..., também já atuei na área de automação comercial, fazendo uso da linguagem de programação Object Pascal. Tenho conhecimento em linguagens como C, C++, .NET(Visual Basic), HTML5, JavaScript, CSS3, PHP, boa comunicação para com clientes, atuando também como suporte na empresa em que presto serviços. Também participo de projetos com desenvolvimento em Node e React com Typescript utilizando Framework AdonisJs.</p>
+        <h3 class="w3-padding-16">Conhecimentos</h3>
+        <p class="w3-wide">Banco de Dados Mysql</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+        </div>
+        <p class="w3-wide">PHP</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide">Symfony Framework</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+        </div><br>
+        <p class="w3-wide">Twig for Template Designers</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+        </div><br>
+
+        <!-- Testimonials -->
+        <h3 class="w3-padding-24">Recoendações</h3>
+        <img src="img/enderson.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Emderson Oliveira</span> Account Executive Logistics na Bringg </p>Felipe é extremamente dedicado ao que faz. Sabe estabelecer objetivos, prazos e definir o que deve ser feito para cumpri-los. Está sempre aprendendo e gosta de desafios. Seu otimismo contagia toda a equipe. </p><br><br>
+
+        <img src="img/bruno.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Bruno Azevedo</span> Analista contábil | Gener Contabilidade & Consultores</p>
+        <p>Excelente profissional. Tive oportunidade de trabalhar juntos em diversos projetos. Possui uma alta visão para construção e estruturação de um banco de dados de acordo com escopo apresentado, excelente em escolher a melhor stack para um projeto, seja ele web, mobile ou API Rest.</p><br>
+
+        <img src="img/diego.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Diego Faria</span> Desenvolvedor Jr. </p>
+        <p>ótimo desenvolvedor Delphi, possui qualidade no atendimento, qualificado a atuar também com suporte, possui uma comunicação de fácil entendimento ao usuário.</p><br>
+
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16">Redes Profissionais</h3>
+
+        <div class="w3-row">
+            <div class="w3-col s6 " >
+                <a href="https://www.linkedin.com/in/felipeisraelsantos/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" style="font-size:24px"></i>  https://www.linkedin.com/in/felipeisraelsantos/</a>
+            </div>
+            <div class="w3-col s6 " >
+                <a href="https://github.com/felipeisraelsantos" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" style="font-size:24px"></i>  https://github.com/felipeisraelsantos</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+        <h2>Contact Me</h2>
+        <hr class="w3-opacity">
+
+        <div class="w3-section">
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: felipe.israel@aluno.ifsp.edu.br</p>
+        </div>
+        <!-- End Contact Section -->
+    </div>
+
+    <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+        // Open and close sidebar
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
 </body>
+
 </html>
